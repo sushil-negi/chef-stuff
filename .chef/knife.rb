@@ -9,3 +9,5 @@ validation_client_name   "mpa-validator"
 validation_key           "#{current_dir}/mpa-validator.pem"
 chef_server_url          "https://api.opscode.com/organizations/mpa"
 cookbook_path            ["#{current_dir}/../cookbooks"]
+knife[:aws_credential_file] = "#{current_dir}/aws_cred_file"
+
